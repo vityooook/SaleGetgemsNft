@@ -86,8 +86,8 @@ async function main() {
       sendMode: SendMode.PAY_GAS_SEPARATELY + SendMode.IGNORE_ERRORS,
       messages: [
         internal({
-          to: "", //address of NFT Item contract, that should be placed on market
-          value: toNano("0.01"),
+          to: "", // address of NFT Item contract, that should be placed on market
+          value: toNano("0.3"), // the rest will be returned (do not touch)
           body: transferNftBody
         })
       ]
